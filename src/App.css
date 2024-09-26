@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+    .desktop-only {
+      display: none;
+    }
+    .mobile-warning {
+        height: 100vh;
+        padding: 10px;
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 18px;
+      color: red;
+    }
+  }
+  
+  .mobile-warning {
+    /* display: none; Hidden by default */
+  }
+  

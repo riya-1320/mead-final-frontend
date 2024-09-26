@@ -1,0 +1,142 @@
+/* Container Styling with Gradient Background */
+.qh-home-container {
+  padding: 20px;
+  height: 95vh;
+  background: linear-gradient(135deg, #f8f4f5 20%, #333333 90%);
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  z-index: 1;
+}
+
+/* Title Styling */
+.qh-home-title {
+  text-align: center;
+  color: #FF1B47;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Table Container */
+.qh-table-container {
+  max-width: 90%;
+  margin: 0 auto;
+  height: 70%;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+/* Table Styling */
+.qh-quotation-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+  color: #333;
+}
+
+.qh-quotation-table th,
+.qh-quotation-table td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 0.95rem;
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+
+.qh-quotation-table th {
+  background-color: transparent;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-top: 2px solid #FF1B47;
+  border-bottom: 2px solid #FF1B47;
+}
+
+.qh-quotation-table tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.3); /* Light transparent background */
+}
+
+.qh-quotation-table tr:nth-child(odd) td {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker transparent background */
+}
+
+.qh-quotation-table tr:hover td {
+  background-color: rgba(255, 255, 255, 0.4); /* Hover effect */
+}
+
+/* Button Styling */
+.qh-view-button {
+  background-color: #333333;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.qh-view-button:hover {
+  background-color: #e6003a; /* Hover effect on button */
+}
+
+/* Loading and Error Message */
+.qh-loading-text,
+.qh-no-quotations,
+.qh-error-message {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+/* Pagination Styling */
+.qh-pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qh-pagination-page,
+.qh-pagination-prev,
+.qh-pagination-next {
+  background-color: transparent;
+  color: #FF1B47;
+  padding: 8px 14px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.qh-pagination-page:hover,
+.qh-pagination-prev:hover,
+.qh-pagination-next:hover {
+  background-color: #FF1B47;
+  color: white;
+}
+
+.qh-active-page {
+  background-color: #FF1B47;
+  color: white;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+
+.qh-disabled {
+  background-color: transparent;
+  color: #686666;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
